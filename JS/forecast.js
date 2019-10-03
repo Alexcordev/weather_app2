@@ -17,6 +17,9 @@ var displayTemp2 = document.querySelector('#temp3');
 var displayTemp3 = document.querySelector('#temp4');
 var displayTemp4 = document.querySelector('#temp5');
 var ville = document.querySelector('#ville');
+var show_message = document.querySelector('#voir1');
+var show_image = document.querySelector('#display_image');
+
 
 var forecast = [];
 
@@ -95,6 +98,12 @@ getRequest()
    var temper2 = document.createElement('h1');
    var temper3 = document.createElement('h1');
    var temper4 = document.createElement('h1');
+   var message1 = document.createElement('h6');
+   var image1 = document.createElement('img');
+   var message2 = document.createElement('h6');
+   var image2 = document.createElement('img');
+   var message3 = document.createElement('h6');
+   var image3 = document.createElement('img');
 
      for (var i=0; i<forecast.length; i++)
             
@@ -115,8 +124,33 @@ getRequest()
      conditions1.style.fontSize = '1.5rem';
      conditions1.style.color = '#ffffff';
      conditions1.style.textShadow = '2px 1px #333';
+     image1.src='images/umbrella' + '.png'; 
+     image1.style.width = '100px';
+     image1.style.height = '100px';
+     image1.style.margin = '20px 40px 20px 40px';
+     image2.src='images/Sunglasses-icon' + '.png'; 
+     image2.style.width = '100px';
+     image2.style.height = '100px';
+     image2.style.margin = '20px 40px 20px 40px';
+     message1.innerHTML = 'APPORTEZ VOTRE PARAPLUIE !!';
+     message1.style.fontSize = '22px';
+     message1.style.color = '#ffffff';
+     message1.style.textAlign = 'center';
+     message2.innerHTML = 'APPORTEZ VOS LUNETTES SOLAIRES !!'
+     message2.style.fontSize = '22px';
+     message2.style.color = '#ffffff';
+     message2.style.textAlign = 'center';
      
-     
+      
+     if (Date == forecast[0] && forecast[2] == '04d') {
+        show_message.append(message1);
+        show_image.append(image1);
+        
+      }
+      
+      console.log(forecast[2]);
+      console.log(image1);
+
      info.append(picture1);
      info.append(today1);
      info.append(conditions1);
@@ -138,7 +172,18 @@ getRequest()
      conditions.style.fontSize = '1.5rem';
      conditions.style.color = '#ffffff';
      conditions.style.textShadow = '2px 1px #333'
+     image3.src='images/chandail' + '.png'; 
+     image3.style.width = '100px';
+     image3.style.height = '100px';
+     image3.style.margin = '20px 40px 20px 40px';
+     message3.innerHTML = 'APPORTEZ-VOUS UN CHANDAIL';
+     message3.style.fontSize = '22px';
+     message3.style.color = '#ffffff';
+     message3.style.textAlign = 'center';
 
+      
+     
+     
      info1.append(picture);
      info1.append(today);
      info1.append(conditions);

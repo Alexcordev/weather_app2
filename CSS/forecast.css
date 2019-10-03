@@ -284,27 +284,39 @@ body{
   }
 
   .alert {
-
-    width: 70%;
+    display: flex;
+    width: 80%;
     height: 200px;
-    margin: 20px 135px 40px 135px ;
+    margin: auto ;
     border: 2px #ffffff solid;
     box-shadow: 2px 3px 5px #1a1a1a;
-    position: absolute;
+    
 
 
   }
 
   .message {
-
-    position: relative;
+    flex: 2;
+    order: 1;
     border: 2px #ccc solid;
-    left: 10px;
-    top: 20px;
     width: 50%;
+    margin: 30px 15px 30px 15px;
     height: 150px;
 
   }
+
+  .image {
+    flex: 1;
+    order: 2;
+    border: 2px #ccc solid;
+    width: 30%;
+    margin: 30px 15px 30px 15px;
+    height: 150px;
+
+  }
+
+
+  
   
 
 @media (max-width: 800px) {
@@ -368,3 +380,4 @@ body{
     margin-left: 5px;
    }
 }
+
