@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Météo</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="CSS/forecast.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+</head>
+<body>
+   <div class="main-container">
+    <div class="header">
+       <div class="box1">
+      <img class="logo" src="weather-icon.png" alt="logo"­>
+       </div>
+       
+       <div class="box2">
+         <span class="text">Météo Plus &nbsp;<i id="small-icon" class="fa fa-umbrella fa-2x"></i></span>
+
+       </div>
+   </div>
+<section>
+
+  <div class="search">
+    <label style="margin-left: 60px" for="ville">Ville</label>
+    <input type="text" name="ville" id="ville" placeholder="Entrez la ville à rechercher">
+    <button onclick="getForecast()" class="bouton" type="submit">Rechercher</button>
+
+  </div>
+
+    <header class="head"> 
+        <h1 class="text-header">Prévisions 5 prochains jours</h1>
+        
+    </header>
+
+    
+    <div class='container-1'>
+    
+
+
+       <div class="widget-1" id="weather1">
+         
+        <p id="temp1"></p> 
+        
+    </div>
+       
+    
+        <div class="widget-2" id="weather2">
+            <p id="temp2"></p> 
+            
+     </div>
+
+     
+        <div class="widget-3" id="weather3">
+ 
+          <p id="temp3"></p> 
+          
+     </div>
+
+     
+        <div class="widget-4" id="weather4">
+ 
+          <p id="temp4"></p> 
+          
+     </div>
+
+     
+        <div class="widget-5" id="weather5">
+ 
+          <p id="temp5"></p> 
+          
+     </div>
+    
+    </div>  
+   
+</section>
+
+
+
+</div>
+
+<section>
+
+  <div class="alert">
+
+    <div class="message">
+
+
+    </div>
+
+    <div class="image">
+
+
+
+    </div>
+
+    
+  </div>
+
+
+</section>
+
+
+<div class="main-container2">
+<main class="container">
+      <section class="card" data-aos="fade-left">
+        <img src="https://i.ibb.co/VvC0vpN/paint-1.png" alt="" />
+        <div>
+          <h3>Acrylic Painting One</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+            enim laudantium, animi veniam libero eveniet culpa unde perferendis
+            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+            officia. Ab, delectus.
+          </p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </section>
+
+      <section class="card" data-aos="fade-left">
+        <img src="https://i.ibb.co/3NHjDcW/paint-2.png" alt="" />
+        <div>
+          <h3>Acrylic Painting Two</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+            enim laudantium, animi veniam libero eveniet culpa unde perferendis
+            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+            officia. Ab, delectus.
+          </p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </section>
+
+      <section class="card" data-aos="fade-right">
+        <img src="https://i.ibb.co/0VywMkW/paint-3.png" alt="" />
+        <div>
+          <h3>Acrylic Painting Three</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+            enim laudantium, animi veniam libero eveniet culpa unde perferendis
+            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+            officia. Ab, delectus.
+          </p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </section>
+
+      <section class="card" data-aos="fade-left">
+        <img src="https://i.ibb.co/5LkJFRP/paint-4.png" alt="" />
+        <div>
+          <h3>Acrylic Painting Four</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+            enim laudantium, animi veniam libero eveniet culpa unde perferendis
+            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+            officia. Ab, delectus.
+          </p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </section>
+
+      <section class="card" data-aos="fade-right">
+        <img src="https://i.ibb.co/61R8Q2y/paint-5.png" alt="" />
+        <div>
+          <h3>Acrylic Painting Five</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
+            enim laudantium, animi veniam libero eveniet culpa unde perferendis
+            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
+            officia. Ab, delectus.
+          </p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </section>
+    </main>
+   </div>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="JS/forecast.js"></script>
+<script src="https://use.fontawesome.com/56a521e0d9.js"></script>
+
+<script>
+  AOS.init({
+   offset: 400,
+   duration: 1000
+
+ });
+</script>   
+
+
+
+</body>
+</html>
