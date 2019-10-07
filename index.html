@@ -1,201 +1,150 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Météo</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="CSS/forecast.css">
+    <title>Accueil</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="CSS/accueil.css">
 </head>
+
 <body>
-   <div class="main-container">
-    <div class="header">
-       <div class="box1">
-      <img class="logo" src="weather-icon.png" alt="logo"­>
-       </div>
-       
-       <div class="box2">
-         <span class="text">Météo Plus &nbsp;<i id="small-icon" class="fa fa-umbrella fa-2x"></i></span>
 
-       </div>
-   </div>
-<section>
-
-  <div class="search">
-    <label style="margin-left: 60px" for="ville">Ville</label>
-    <input type="text" name="ville" id="ville" placeholder="Entrez la ville à rechercher">
-    <button onclick="getForecast()" class="bouton" type="submit">Rechercher</button>
-
-  </div>
-
-    <header class="head"> 
-        <h1 class="text-header">Prévisions 5 prochains jours</h1>
-        
-    </header>
-
-    
-    <div class='container-1'>
-    
-
-
-       <div class="widget-1" id="weather1">
-         
-        <p id="temp1"></p> 
-        
-    </div>
-       
-    
-        <div class="widget-2" id="weather2">
-            <p id="temp2"></p> 
+        <div class="main-container">
+        <div class="jumbotron">
+                <div class="container-title">
+                    
+                  <h1 class="display-4">MÉTÉO PLUS</h1>
+                  
+                  
             
-     </div>
-
-     
-        <div class="widget-3" id="weather3">
- 
-          <p id="temp3"></p> 
-          
-     </div>
-
-     
-        <div class="widget-4" id="weather4">
- 
-          <p id="temp4"></p> 
-          
-     </div>
-
-     
-        <div class="widget-5" id="weather5">
- 
-          <p id="temp5"></p> 
-          
-     </div>
-    
-    </div>  
-   
-</section>
-
-
-
-</div>
-
-<section>
-
-  <div class="alert">
-
-    <div class="message">
-
-
+                  </div>
+                  <p style="margin-left: 20px" class="lead">Vos prévisions locales en temps réel</p>
+                </div>
+             
+        
+                         
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <span class="horloge" id="heures"></span>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-5 mr-auto mt-2 mt-lg-0">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="previsions_5jours.html">Prévisions</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link " href="videos.html">Actualité</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Nous joindre</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text" id="nom_session">
+                        
+                      </span>&nbsp;&nbsp;
+                      <a class="btn btn-outline-warning btn-sm" href="login.html">Connexion</a>&nbsp;
+                      <a class="btn btn-outline-primary btn-sm" href="login.html" id="logout">Déconnexion</a>&nbsp;
+                  </div>
+                </nav>   
+        <div class="bxslider">
+                <div><img src="images/beach-slider.jpg" title="Les plaisirs de l'été"></div>
+                <div><img src="images/winter.jpg" title="Les beaux paysages d'hiver"></div>
+                <div><img src="images/summer.jpg" title="Un beau coucher de soleil"></div>  
+                <div><img src="images/autumn.jpg" title="L'été indien"></div>
+              </div>
+      <div class="intro">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+      incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh venenatis
+       cras sed. Velit egestas dui id ornare arcu. Non sodales neque sodales ut etiam sit amet.
+        Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Sagittis orci a 
+        scelerisque purus semper eget duis at. Amet risus nullam eget felis eget nunc lobortis.
+      </p>
     </div>
-
-    <div class="image">
-
-
-
-    </div>
-
-    
-  </div>
-
-
-</section>
-
-
+    <h1 style="color: #333333; font-size: 35px; margin: 20px auto 15px 30px">Nouveaux membres</h1>
 <div class="main-container2">
-<main class="container">
-      <section class="card" data-aos="fade-left">
-        <img src="https://i.ibb.co/VvC0vpN/paint-1.png" alt="" />
-        <div>
-          <h3>Acrylic Painting One</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-            enim laudantium, animi veniam libero eveniet culpa unde perferendis
-            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-            officia. Ab, delectus.
-          </p>
-          <a href="#" class="btn">Buy Now</a>
+
+    <div class="box1">
+    <p style="margin: auto" id="userList">
+
+
+    </p>
+
+    
+
+    </div>
+
+    <div class="box2">
+<h4><span class="photo_texte">Photo de la semaine</span></h4>
+<div class="photo_semaine">
+    <img class="image_aside" src="images/caracol.jpg" alt="Escargo">
+<p style="margin:auto; font-size:15px;color:#333">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+   ut labore et dolore magna aliqua. Lectus arcu bibendum at varius vel. Libero justo laoreet 
+   sit amet.</p>
+
+</div><br><br><br>
+
+<h4><span class="photo_texte">Hiver extrême à venir</span></h4>
+<div class="photo_semaine">
+    
+    <img class="image_aside" src="images/Ice_Storm.jpg" alt="Verglas">
+<p style="margin:auto; font-size:15px;color:#333">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+   ut labore et dolore magna aliqua. Lectus arcu bibendum at varius vel. Libero justo laoreet 
+   sit amet.</p>
+
+</div><br><br><br>
+    <h4><span class="photo_texte">Vague de chaleur</span></h4>
+    <div class="photo_semaine">
+    
+        <img class="image_aside" src="images/vague_chaleur.jpg" alt="Verglas">
+    <p style="margin:auto; font-size:15px;color:#333">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+       ut labore et dolore magna aliqua. Lectus arcu bibendum at varius vel. Libero justo laoreet 
+       sit amet.</p>
+    
+    </div>
+    
+    
         </div>
-      </section>
+</div>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+ <script src="https://use.fontawesome.com/56a521e0d9.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-      <section class="card" data-aos="fade-left">
-        <img src="https://i.ibb.co/3NHjDcW/paint-2.png" alt="" />
-        <div>
-          <h3>Acrylic Painting Two</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-            enim laudantium, animi veniam libero eveniet culpa unde perferendis
-            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-            officia. Ab, delectus.
-          </p>
-          <a href="#" class="btn">Buy Now</a>
-        </div>
-      </section>
+    <script src="JS/accueil.js"></script>
+    
 
-      <section class="card" data-aos="fade-right">
-        <img src="https://i.ibb.co/0VywMkW/paint-3.png" alt="" />
-        <div>
-          <h3>Acrylic Painting Three</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-            enim laudantium, animi veniam libero eveniet culpa unde perferendis
-            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-            officia. Ab, delectus.
-          </p>
-          <a href="#" class="btn">Buy Now</a>
-        </div>
-      </section>
-
-      <section class="card" data-aos="fade-left">
-        <img src="https://i.ibb.co/5LkJFRP/paint-4.png" alt="" />
-        <div>
-          <h3>Acrylic Painting Four</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-            enim laudantium, animi veniam libero eveniet culpa unde perferendis
-            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-            officia. Ab, delectus.
-          </p>
-          <a href="#" class="btn">Buy Now</a>
-        </div>
-      </section>
-
-      <section class="card" data-aos="fade-right">
-        <img src="https://i.ibb.co/61R8Q2y/paint-5.png" alt="" />
-        <div>
-          <h3>Acrylic Painting Five</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod error
-            enim laudantium, animi veniam libero eveniet culpa unde perferendis
-            illo fugit corporis, voluptatibus totam dolorum, maiores magnam
-            officia. Ab, delectus.
-          </p>
-          <a href="#" class="btn">Buy Now</a>
-        </div>
-      </section>
-    </main>
-   </div>
-
-
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="JS/forecast.js"></script>
-<script src="https://use.fontawesome.com/56a521e0d9.js"></script>
-
-<script>
-  AOS.init({
-   offset: 400,
-   duration: 1000
-
- });
-</script>   
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr-ca.js"></script>
 
 </body>
+
+
 </html>
+
+
+
+
+
+
+
+
+
+
+

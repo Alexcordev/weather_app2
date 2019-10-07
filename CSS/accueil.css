@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-container {
+
+    box-sizing: border-box;
+    max-width: 70%;
+    max-height: 90%;
+    border: 4px solid #ffffff;
+    margin:40px auto 20px auto;
+    padding-bottom: 40px;
+    box-shadow: 2px 3px 4px #333333;
+    background-color: #ffffff;
+    
+    
+}
+
+.jumbotron {
+
+    background-color: #0066ff;
+    color: #ffffff;
+    width: 100%;
+    margin: auto;
+}
+
+.intro {
+    max-width: 90%;
+    margin: auto auto 60px 30px;
+    border-bottom: 3px #ccc solid;
+}
+
+
+.main-container2 {
+    box-sizing: border-box;
+    max-width: 70%;
+    max-height: 90%;
+    margin:40px auto 60px auto;
+    padding-bottom: 40px;
+    display: flex;
+}
+body{
+    margin: 0px 40px 40px 40px;
+    font-family: 'Roboto Condensed', sans-serif; 
+    background-image: url(../images/clouds.png);    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-sizing: content-box;
+    
+}
+
+.box1 {
+
+    flex: 2;
+    order: 1;
+    margin: auto auto auto -60px;
+    
+}
+
+.box2 {
+
+    flex: 1;
+    order: 2;
+    margin: 15px -90px;
+}
+
+.photo_semaine {
+
+    width: 300px;
+    height: 250px;
+    margin: -20px auto auto auto;
+    border: 1px #333333 solid;
+    box-shadow: 1px 2px 3px #000000;
+}
+
+h4 {
+
+margin-top: 60px;
+margin-bottom: 40px;
+text-align: center;
+line-height: 5px;
+color: #333;
+background: url('../images/lines.png') repeat-x;
+}
+
+.photo_texte {
+    
+   font-size: 20px;
+   font-weight: bold;
+   padding: 5px; 
+}
+
+.image_aside {
+width: 300px;
+height:250px;
+}
+
+#main {
+
+    width: 100%;
+    height: auto;
+    background-color: #ccc;
+    color: #ffffff;
+    display: flex;
+    margin: auto;
+
+}
+
+.card-form {
+
+    margin: 30px auto auto 30px;
+    width: auto;
+    order: 1;
+    flex: 1;
+}
+
+.textarea {
+
+    width: 400px;
+    height: auto;
+    margin: 30px 40px auto 0px;
+    order: 2;
+    flex: 1;
+
+}
+
+.envoyer {
+
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80px;
+    background-color: #33cc33;
+    border: 2px #ffffff solid;
+    color: #ffffff;
+
+}
+
+input {
+
+    width: 80%;
+    height: 30px;
+}
