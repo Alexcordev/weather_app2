@@ -304,6 +304,7 @@ body{
 
   .alert {
     display: flex;
+<<<<<<< HEAD
     width: 98%;
     height: 175px;
     margin: 20px 5px 20px 5px ;
@@ -311,6 +312,13 @@ body{
     box-shadow: 2px 3px 5px #1a1a1a;
     text-align: center;
     
+=======
+    width: 80%;
+    height: 200px;
+    margin: auto ;
+    border: 2px #ffffff solid;
+    box-shadow: 2px 3px 5px #1a1a1a;
+>>>>>>> bde2c04968b05e7d1e0009ce968d4ac2850225bb
     
 
 
@@ -321,8 +329,13 @@ body{
     order: 1;
     border: 2px #ccc solid;
     width: 50%;
+<<<<<<< HEAD
     margin: 5px 15px 5px 15px;
     height: 125px;
+=======
+    margin: 30px 15px 30px 15px;
+    height: 150px;
+>>>>>>> bde2c04968b05e7d1e0009ce968d4ac2850225bb
 
   }
 
@@ -331,6 +344,7 @@ body{
     order: 2;
     border: 2px #ccc solid;
     width: 30%;
+<<<<<<< HEAD
     margin: 5px 15px 5px 15px;
     height: 125px;
 
@@ -357,6 +371,14 @@ body{
       
      
   }
+=======
+    margin: 30px 15px 30px 15px;
+    height: 150px;
+
+  }
+
+
+>>>>>>> bde2c04968b05e7d1e0009ce968d4ac2850225bb
   
   
 
