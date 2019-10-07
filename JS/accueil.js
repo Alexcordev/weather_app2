@@ -1,5 +1,6 @@
 'use strict'
 $(document).ready(function(){
+    
     $('.bxslider').bxSlider({
       auto: true,
       mode: 'fade',
@@ -8,28 +9,7 @@ $(document).ready(function(){
       pager: false
     });
 
-    $('#form-login').submit(function(){
-    var prenom = $('#prenom').val();
-
-    localStorage.setItem('prenom', prenom);
-
-});
-
-var prenom =  localStorage.getItem('prenom');
-var showPrenom = document.createElement('h6');
-
-if(prenom != null && prenom != 'undefined'){
-    var nom_session = $('#nom_session');
-
-    showPrenom.innerHTML = '<strong>Bienvenue, '+ prenom +'</strong>';
-    showPrenom.style.fontSize = '20px';
-    showPrenom.style.color = '#ffffff';
-    showPrenom.style.height = '20px';
-
-    nom_session.append(showPrenom);
-
-
-
+   
   $('#logout').click(function(){
     localStorage.clear();
     window.location.href = "http://localhost/weather_app2/login.html";
@@ -168,6 +148,5 @@ usersList.map((user, i) => {
 
     
 }
-}
+});
 
-}); 
