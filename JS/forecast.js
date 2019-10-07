@@ -61,6 +61,10 @@ var displayTemp2 = document.querySelector('#temp3');
 var displayTemp3 = document.querySelector('#temp4');
 var displayTemp4 = document.querySelector('#temp5');
 var ville = document.querySelector('#ville');
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dd3fc430f0dc48b5936b590d2c5eabf5904b2c23
 var show_message1 = document.querySelector('#voir1');
 var show_image1 = document.querySelector('#display_image1');
 var show_message2 = document.querySelector('#voir2');
@@ -79,6 +83,15 @@ var show_humidity = document.querySelector('#humidity');
 var show_pression = document.querySelector('#pression');
     
         
+<<<<<<< HEAD
+=======
+=======
+var show_message = document.querySelector('#voir1');
+var show_image = document.querySelector('#display_image');
+
+
+>>>>>>> bde2c04968b05e7d1e0009ce968d4ac2850225bb
+>>>>>>> dd3fc430f0dc48b5936b590d2c5eabf5904b2c23
 var forecast = [];
 
 //// Fetcher une api qui envoie une réponse en format JSON
@@ -163,6 +176,10 @@ getRequest()
    var image2 = document.createElement('img');
    var message3 = document.createElement('h6');
    var image3 = document.createElement('img');
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dd3fc430f0dc48b5936b590d2c5eabf5904b2c23
    var image4 = document.createElement('img');
    var message4 = document.createElement('h6');
    var image5 = document.createElement('img');
@@ -171,6 +188,12 @@ getRequest()
    var temp_max = document.createElement('h6');
    var temp_humidity = document.createElement('h6');
    var temp_pression = document.createElement('h6');
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> bde2c04968b05e7d1e0009ce968d4ac2850225bb
+>>>>>>> dd3fc430f0dc48b5936b590d2c5eabf5904b2c23
      for (var i=0; i<forecast.length; i++)
             
      {
@@ -198,6 +221,10 @@ getRequest()
      image2.style.width = '100px';
      image2.style.height = '100px';
      image2.style.margin = '20px 40px 20px 40px';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dd3fc430f0dc48b5936b590d2c5eabf5904b2c23
      image3.src='images/chandail' + '.png'; 
      image3.style.width = '100px';
      image3.style.height = '100px';
@@ -230,13 +257,43 @@ getRequest()
      image5.style.width = '100px';
      image5.style.height = '100px';
      image5.style.margin = '20px 40px 20px 40px';
+<<<<<<< HEAD
      
      
      
+=======
+     
+     
+     
+>>>>>>> dd3fc430f0dc48b5936b590d2c5eabf5904b2c23
 
       console.log(forecast[2]);
       console.log(image1);
      
+<<<<<<< HEAD
+=======
+=======
+     message1.innerHTML = 'APPORTEZ VOTRE PARAPLUIE !!';
+     message1.style.fontSize = '22px';
+     message1.style.color = '#ffffff';
+     message1.style.textAlign = 'center';
+     message2.innerHTML = 'APPORTEZ VOS LUNETTES SOLAIRES !!'
+     message2.style.fontSize = '22px';
+     message2.style.color = '#ffffff';
+     message2.style.textAlign = 'center';
+     
+      
+     if (Date == forecast[0] && forecast[2] == '04d') {
+        show_message.append(message1);
+        show_image.append(image1);
+        
+      }
+      
+      console.log(forecast[2]);
+      console.log(image1);
+
+>>>>>>> bde2c04968b05e7d1e0009ce968d4ac2850225bb
+>>>>>>> dd3fc430f0dc48b5936b590d2c5eabf5904b2c23
      info.append(picture1);
      info.append(today1);
      info.append(conditions1);
@@ -260,6 +317,10 @@ getRequest()
      conditions.style.fontSize = '1.5rem';
      conditions.style.color = '#ffffff';
      conditions.style.textShadow = '2px 1px #333'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dd3fc430f0dc48b5936b590d2c5eabf5904b2c23
      image1.src='images/umbrella' + '.png'; 
      image1.style.width = '100px';
      image1.style.height = '100px';
@@ -268,10 +329,19 @@ getRequest()
      image2.style.width = '100px';
      image2.style.height = '100px';
      image2.style.margin = '20px 40px 20px 40px';
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> bde2c04968b05e7d1e0009ce968d4ac2850225bb
+>>>>>>> dd3fc430f0dc48b5936b590d2c5eabf5904b2c23
      image3.src='images/chandail' + '.png'; 
      image3.style.width = '100px';
      image3.style.height = '100px';
      image3.style.margin = '20px 40px 20px 40px';
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dd3fc430f0dc48b5936b590d2c5eabf5904b2c23
      image4.src ='images/coat' + '.png';
      image4.style.width = '100px';
      image4.style.height = '100px';
@@ -301,6 +371,17 @@ getRequest()
      image5.style.height = '100px';
      image5.style.margin = '20px 40px 20px 40px';
     
+<<<<<<< HEAD
+=======
+=======
+     message3.innerHTML = 'APPORTEZ-VOUS UN CHANDAIL';
+     message3.style.fontSize = '22px';
+     message3.style.color = '#ffffff';
+     message3.style.textAlign = 'center';
+
+      
+>>>>>>> bde2c04968b05e7d1e0009ce968d4ac2850225bb
+>>>>>>> dd3fc430f0dc48b5936b590d2c5eabf5904b2c23
      
      
      info1.append(picture);
