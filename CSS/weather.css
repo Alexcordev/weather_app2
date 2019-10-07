@@ -1,0 +1,201 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+.login-main {
+    width: 100%;
+    height: 550px;
+
+
+}
+
+.display-4 {
+margin-top: -40px;
+
+}
+
+.horloge {
+    
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    margin-right: 20px;
+    
+}
+
+.post {
+    width : 70%;
+    height : auto;
+    margin: 40px auto 40px 15px;
+
+}
+
+
+.card {
+
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background: none !important;
+    border: 4px #ffffff solid;
+    box-shadow: 2px 3px 4px #1a1a1a;
+}
+
+.card-header {
+
+    background-color: #ffcc00 !important;
+    color: #ffffff;
+    text-shadow: 1px 2px #1a1a1a;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.card-title {
+    color: #ffffff;
+    text-shadow: 1px 2px #1a1a1a;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+
+.card-text {
+    color: #ffffff;
+    text-shadow: 1px 2px #1a1a1a;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+
+.card-footer {
+
+    
+    color: #ffffff !important;
+    text-shadow: 1px 2px #1a1a1a;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+#pre {
+
+    color: #0066ff !important;
+    font-size: 20px color #ffffff;
+    text-shadow: 1px 1px #1a1a1a;
+    font-size: 20px;
+    
+
+}
+
+#email {
+    color: #0066ff !important;
+    font-size: 20px color #ffffff;
+    text-shadow: 1px 1px #1a1a1a;
+    font-size: 20px;
+
+}
+
+#mdp {
+    color: #0066ff !important;
+    font-size: 20px color #ffffff;
+    text-shadow: 1px 1px #1a1a1a;
+    font-size: 20px;
+
+
+}
+
+.container-main {
+
+    border: 5px #ffffff solid;
+    width: 100%;
+    height: 1700px;
+}
+
+.jumbotron {
+
+    background-color: #0066ff;
+    color: #ffffff;
+}
+
+
+
+body {
+margin: 40px 150px 60px 150px;
+font-family: sans-serif;
+background-image: url(/weather_app2/images/clouds.png);
+}
+
+.row {
+    margin: 5px auto 30px auto;
+    height: 40px;
+    width: auto;
+    
+}
+
+.column {
+    float: left;
+    width: 50%;
+   
+  }
+
+.previsions {
+    width:95%;
+    height: 300px;
+    display: inline-block;
+    border: 2px solid #ffffff;
+    margin: 5px 30px 5px 30px;
+    box-shadow: 5px 10px 10px #0d0d0d;
+}
+
+h1 {
+    margin-right: 20px;
+    float: right;
+    font-size: 45px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #00004d;
+}
+
+.rechercher {
+    background-color: #ffcc00;
+    height: 75px;
+    border: 1px solid #1a1a1a;
+    box-shadow: 8px 8px 5px #00004d;
+    color: #ffffff;
+}
+
+#nomdeville {
+    margin-left: 20px;
+    margin-top: 15px;
+    padding:10px;
+    width: 300px;
+}
+
+.bouton {
+    margin-top: 15px;
+    background-color: #0066ff;
+    padding: 10px;
+    width:auto;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 30px;
+    
+}
+
+
+
+  /* Responsive layout - (600px largeur ou moins) */
+  @media screen and (max-width: 700px) {
+    .column {
+      width: 100%;
+    }
+
+    .logo {
+        display:none;
+    }
+
+    #nomdeville {
+
+        width: auto;
+    }
+  }

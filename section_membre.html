@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Météo</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/weather.css">
+    
+    
+    
+</head>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <span class="horloge" id="heures"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-5 mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="previsions_5jours.html">Prévisions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="videos.html">Actualité</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="contact.html">Nous joindre</a>
+          </li>
+      </ul>
+      <span class="navbar-text" id="nom_session">
+          
+        </span>&nbsp;&nbsp;
+        <button class="btn btn-outline-primary btn-sm" id="logout" type="submit">Déconnexion</button>
+    </div>
+  </nav>   
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container-title">
+        
+      <h1 class="display-4">MÉTÉO PLUS</h1>
+      
+      
+
+      </div>
+      <p style="margin-left: 20px" class="lead">Vos prévisions locales en temps réel</p>
+    </div>
+  </div>           
+              
+  
+  <p class="marquee"><span id="dtText"></span></p>
+</header>
+
+<body>
+  <div class="container-main">    
+      
+    
+ 
+    
+
+    <div class="row">
+        <h2 id="nomVille"></h2>
+        
+       
+    </div>   
+
+    <div class="column">
+    
+        
+        <span class="previsions" id="weather">
+                        
+            <h1 style="float:left; margin-left: 20px">Conditions Actuelles</h1><br />
+            <h2 id="description"></h2><br/>
+            <h1 id="temperature"></h1>
+            
+            
+            
+                       
+            <canvas style="float:inline-start; margin:-110px 60px 20px 20px;" class="icon" width="200" height="200"></canvas>
+            
+        </span>
+        
+    </div>
+
+     <div class="column">
+        
+            <h2 style="display: none" id="pluie"></h2>
+           
+            
+
+
+     </div>
+
+     <div class="carte"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d357585.07669368153!2d-74.01049520275127!3d45.557699558026336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2zTW9udHLDqWFsLCBRQw!5e0!3m2!1sfr!2sca!4v1570376141361!5m2!1sfr!2sca" width="400" height="300" frameborder="1" style=" margin: 7px auto auto 100px; box-shadow: 2px 3px 4px #333333;border:2px #333333 solid;" allowfullscreen=""></iframe></div>  
+     
+     <div class="post" id="posts"></div>
+ 
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/fr-ca.js"></script>
+
+<script src="JS/weather.js"></script>
+ <script src="skycons.js"></script>
+ <script src="JS/login.js"></script>
+
+
+</div>
+</body>
+
+
+
+
+
+
+
+</html>

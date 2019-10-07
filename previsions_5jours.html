@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Météo</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="CSS/forecast.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+</head>
+<body>
+   <div class="main-container">
+    <div class="header">
+       <div class="box1">
+      <img class="logo" src="weather-icon.png" alt="logo"­>
+       </div>
+       
+       <div class="box2">
+         <span class="text">Météo Plus &nbsp;<i id="small-icon" class="fa fa-umbrella fa-1x"></i></span>
+
+       </div>
+       
+   </div>
+   
+<section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <span class="horloge" id="heures"></span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-5 mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="previsions_5jours.html">Prévisions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="videos.html">Actualité</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html">Nous joindre</a>
+            </li>
+        </ul>
+        <span class="navbar-text" id="nom_session">
+          
+          </span>&nbsp;&nbsp;
+        <a style="margin-top: 0px" class="btn btn-outline-warning btn-sm" href="login.html">Connexion</a>&nbsp;
+          <a style="margin-top: 0px" class="btn btn-outline-primary btn-sm" href="login.html" id="logout">Déconnexion</a>
+      </div>
+    </nav> 
+
+    <div style="margin:40px auto 10px 60px;height:50px; width:50%;" class="alert alert-danger alert-dismissible fade show" role="alert" id="alert">
+        <strong>Erreur</strong> Vous devez entrer le nom de la ville svp !
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+  <div class="search">
+    <label style="margin-left: 60px" for="ville">Ville</label>
+    <input type="text" name="ville" id="ville" placeholder="Entrez la ville à rechercher">
+    <button onclick="getForecast()" id="search" class="bouton" type="submit">Rechercher</button>
+    
+  </div>
+
+    <header class="head"> 
+        <h1 class="text-header">Prévisions 5 prochains jours</h1>
+        
+    </header>
+    <p style="color:#ffffff; margin: 60px 60px 30px 60px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh 
+        venenatis cras sed. Velit egestas dui id ornare arcu. Non sodales neque sodales 
+        ut etiam sit amet. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam.
+        Sagittis orci a scelerisque purus semper eget duis at. Amet risus nullam eget felis
+        eget nunc lobortis.
+       </p>
+    
+    <div class='container-1' id="main">
+    
+        
+
+       <div class="widget-1" id="weather1">
+        
+        <p id="temp1"></p> 
+
+        <div class="main-weather" id="main-forecast"></div>
+        
+        <div class="details" id="precisions"></div> 
+        
+        
+    </div>
+
+        
+       
+    
+        <div class="widget-2" id="weather2">
+            <p id="temp2"></p> 
+
+            <div class="main-weather" id="main-forecast1"></div>
+        
+        <div class="details" id="precisions"></div> 
+            
+     </div>
+
+     
+
+     
+        <div class="widget-3" id="weather3">
+ 
+          <p id="temp3"></p> 
+
+          <div class="main-weather" id="main-forecast2"></div>
+        
+        <div class="details" id="precisions"></div> 
+          
+     </div>
+
+     
+    
+ 
+
+     
+        <div class="widget-4" id="weather4">
+ 
+          <p id="temp4"></p> 
+
+          <div class="main-weather" id="main-forecast3"></div>
+        
+        <div class="details" id="precisions"></div> 
+          
+     </div>
+
+     
+        <div class="widget-5" id="weather5">
+ 
+          <p id="temp5"></p> 
+
+          <div class="main-weather" id="main-forecast4"></div>
+        
+        <div class="details" id="precisions">
+        </div> 
+          
+     </div>
+     
+    </div>
+    
+</section>
+
+<div class="card" id="today_card">
+    <div class="card-header">
+        Aujourd'hui 
+      </div>
+  <img class="card-img-top" src="" alt="">
+  <div class="card-body">
+    <h5 class="card-title" id="temp_min"></h5>
+    <h5 class="card-title" id="temp_max"></h5>
+    <h5 class="card-title" id="humidity"></h5>
+    <h5 class="card-title" id="pression"></h5>
+
+    
+  </div>
+  
+</div>
+   
+
+ 
+      
+      
+
+
+   <script
+   src="https://code.jquery.com/jquery-3.3.1.min.js"
+   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+   crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="JS/forecast.js"></script>
+<script src="https://use.fontawesome.com/56a521e0d9.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script>
+  AOS.init({
+   offset: 400,
+   duration: 1000
+
+ });
+</script>   
+
+
+
+</body>
+</html>
